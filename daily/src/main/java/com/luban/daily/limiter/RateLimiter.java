@@ -1,4 +1,4 @@
-package com.luban.daily.daily0413;
+package com.luban.daily.limiter;
 
 /***
  * 限速器

@@ -1,4 +1,6 @@
-package com.luban.daily.daily0413;
+package com.luban.daily.limiter;
+
+import com.luban.daily.limiter.RateLimiter;
 
 /**
  * 固定窗口限速器
