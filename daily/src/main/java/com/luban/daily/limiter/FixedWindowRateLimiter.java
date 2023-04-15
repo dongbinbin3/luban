@@ -27,7 +27,7 @@ public class FixedWindowRateLimiter implements RateLimiter {
 
 
     @Override
-    public boolean tryAcquire() {
+    public synchronized boolean tryAcquire() {
         long now = System.currentTimeMillis();
         /**
          * 当小于1s时间，判断令牌个数

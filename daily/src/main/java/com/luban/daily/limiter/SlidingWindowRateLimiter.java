@@ -23,7 +23,7 @@ public class SlidingWindowRateLimiter implements RateLimiter {
 
 
     @Override
-    public boolean tryAcquire() {
+    public synchronized boolean tryAcquire() {
         //获取时间戳
         long timeMillis = System.currentTimeMillis();
         //计算当前时间，应该属于哪个分片，目前简单设计一分钟分为6片,
